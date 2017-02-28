@@ -40,6 +40,7 @@ goenv:
   global:
     1.7.4
   versions:
+    - 1.7.4
     - 1.6.3
     - 1.5.4
 
@@ -86,6 +87,7 @@ goenv:
   global:
     1.7.4
   versions:
+    - 1.7.4
     - 1.6.3
     - 1.5.4
 
@@ -95,6 +97,14 @@ goenv:
   # Create ~/.goenv/cache, optional (default: false)
   # See: https://github.com/syndbg/goenv/tree/bae243f3771731897aafb152126976653cb8213c/plugins/go-build#package-download-caching
   cache: true
+```
+
+## Example
+
+```
+$ cd example
+$ vagrant up
+$ bundle exec itamae ssh --vagrant -y node.yml recipe.rb
 ```
 
 ## MItamae
@@ -107,6 +117,7 @@ node.reverse_merge!(
     user: 'civitaspo',
     global: '1.7.4',
     versions: %w[
+      1.7.4
       1.6.3
       1.5.4
     ],
